@@ -68,3 +68,19 @@ min-width: 30rem;
   position: absolute;
   top: 30%;
 }
+.express-our{
+  width:100%;
+  height:100px;
+}
+.window{
+  background-image:url('/public/images/portrait-young-woman-wearing-traditional-sari-garment (1).avif');
+      display: block;
+      width: 55rem;
+      height: 70rem;
+      background-color: red;
+      border-radius:  50% 50% 0% 0%;
+background-position:center;
+background-size:cover;
+
+
+}
