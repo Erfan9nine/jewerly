@@ -1,0 +1,70 @@
+html {
+  font-size: 62.5%;
+  background-color: #e4e4e4;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cormorant Garamond", serif;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+}
+.header-nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  padding: 0 2rem 0 2rem;
+}
+.header-nav-container nav ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row-reverse;
+}
+.header-nav-container nav ul li {
+  width: 10rem;
+  min-width: 5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 1rem;
+  position: relative;
+  padding: 1rem 0;
+}
+
+
+.header-nav-container nav ul li::before {
+  content: '';
+  position: absolute;
+  bottom: 0; /* زیر آیتم منو */
+  right: 0;
+  width: 0%;
+  height: .5px;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.header-nav-container nav ul li:hover::before {
+  width: 100%;
+  right: 0; 
+}
+.header-nav-container nav ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  color:black;
+}
+.image-header {
+  height: 100%;
+  position: relative;
+}
+
+.image-header img {
+  width: 40%;
+min-width: 30rem;
+  position: absolute;
+  top: 30%;
+}
