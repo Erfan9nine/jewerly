@@ -17,13 +17,13 @@ header {
 .header-nav-container {
   display: flex;
   justify-content: space-between;
+  flex-direction:row-reverse;
   margin-top: 4rem;
   padding: 0 2rem 0 2rem;
 }
 .header-nav-container nav ul {
   display: flex;
   list-style-type: none;
-  flex-direction: row-reverse;
 }
 .header-nav-container nav ul li {
   width: 10rem;
@@ -40,12 +40,12 @@ header {
 .header-nav-container nav ul li::before {
   content: '';
   position: absolute;
-  bottom: 0; /* زیر آیتم منو */
+  bottom: 0; 
   right: 0;
   width: 0%;
   height: .5px;
   background-color: black;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .header-nav-container nav ul li:hover::before {
@@ -54,7 +54,7 @@ header {
 }
 .header-nav-container nav ul li a {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   color:black;
 }
 .image-header {
